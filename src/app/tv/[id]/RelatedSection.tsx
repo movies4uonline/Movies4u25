@@ -11,7 +11,7 @@ export default function RelatedSection({
 }) {
   if (!tvShow) return null;
 
-  // @ts-ignore
+  // @ts-expect-error
   const recommendations = tvShow.recommendations?.results as TVShow[];
   const similar = tvShow.similar?.results as TVShow[];
 
